@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookMark responsive webpage " />
+    <title>BookMark</title>
+    <link rel="shortcut icon" href="images/mark.png" type="image/x-icon">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&display=swap"
+        rel="stylesheet">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="position-relative py-5   ">Bookmarker</h1>
+        </div>
+        <div class="book-info">
+
+            <h2 class="text-center my-4"> Bookmark Your Favorite Sites </h2>
+
+
+            <label for="siteName"> Site Name : </label>
+            <input value="" type="text" class="form-control mb-3" id="siteName">
+
+            <label for="siteUrl"> Site URL : </label>
+            <input value="" type="text" class="form-control mb-3" id="siteUrl">
+            <div class="box m-auto">
+                <button id="addBtn" type="submit" class="m-auto btn  px-5">submit</button>
+
+            </div>
+            <br>
+
+        </div><br>
+
+        <div class="mx-auto w-75 book-info">
+            <input type="text" oninput="searchBookMark(this.value)" placeholder="search by name .."
+                class="form-control my-3 mx-auto w-75"><br>
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th> Index </th>
+                        <th> Website Name </th>
+                        <th> Visit </th>
+                        <th> Delete </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Java script  -->
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
